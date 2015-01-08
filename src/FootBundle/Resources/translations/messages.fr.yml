@@ -1,0 +1,185 @@
+# scr/AppBundle/Ressources/translations/messages.fr.yml
+
+search:     Chercher
+create_a_new:   Créer un nouveau
+delete: Effacer
+Edit:   Edit
+Show:   Voir
+Pass:   Pass
+jours:  Jours
+niveau insuffisant: Votre rôle ne permet pas l'accès à cette page
+page inexistante: La page recherchée n'existe pas ou a été déplacée
+signaler bug: C'est à priori un problème technique. Merci de nous communiquer ce que vous cherchiez à faire lorsque le problème a surgi. Nous essayerons d'y apporter une solutuion rapidement.
+gobackhomeonerror: Presser ce bouton pour retourner à la page d'accueil 
+hors jeu: Hors jeu!
+sortie: Touche!
+backhome : Retour à l'accueil
+retour:
+    liste: Retour à la liste
+
+# Registration
+registration:
+    check_email: Un e-mail a été envoyé à l'adresse %email%. Il contient un lien d'activation sur lequel il vous faudra cliquer afin d'activer votre compte.
+    confirmed: |
+        Félicitations %username% et bienvenue parmi les membres du club. 
+        
+        Votre compte est maintenant activé. 
+        
+        Vous pouvez demander au responsable du club de vous attribuer un role particulier pour jouer, coacher, ou commenter les exploits de vos équipes préférées au sein de votre club.
+        
+        Cordialement.
+        
+        L'équipe.
+        
+    back: Retour à la page d'origine.
+    submit: Enregistrer
+    flash:
+        user_created: L'utilisateur a été créé avec succès
+    email:
+        subject: Bienvenue %username% !
+        message: |
+            Bonjour %username% !
+
+            Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
+
+            Cordialement,
+            L'équipe.
+
+panel:
+    equipe:
+        equipe: Equipe
+        resultats: Résultats
+        actualite: Actualités
+        matchlist : Matches de championnat
+menu:
+    admin:  Administration
+    users: Utilisateurs
+    users.liste: Liste des utilisateurs
+    saison: Saisons
+    saison.liste: Liste des saisons
+    scoring: Scoring
+    scoring.liste: Liste des scoring
+    typematch: types de match
+    typematch.liste: Liste des types de match
+    match: Matches
+    match.liste: Liste des matches
+    club: Clubs
+    equipe.liste: Liste des équipes
+    equipe: Equipes
+    club.liste: Liste des clubs
+    user: Membres
+    user.liste: Liste des membres
+
+    
+grid:
+    edit:       modifier
+    show:       voir
+    entree:     Entrée  
+    sortie:     Sortie
+    minute:     Minute
+    match:      Match
+    liste:      liste
+    debut:      Début
+    fin:        Fin
+    g:          Gagné
+    n:          Nul
+    p:          Perdu
+    type:       Type de match
+    id:         Num.
+    username:   Login
+    email:      Email
+    enabled:    Actif 	
+    lastLogin:  Dernière connexion 	
+    locked:     Verrouillé	
+    expired:    Périmé 	
+    prenom:     Prénom	
+    nom:        Nom	
+    tel:        Tél.
+    Actions:    Actions
+    nom_client: Nom
+    codeape:    Code APE
+    ville:      Ville
+    cp:         Code Postal
+    land:       Pays
+    anciennete: Ancienneté
+    capital:    Capital
+    adresse:    Adresse
+    imageName:  Photo
+    roles:      Niveau
+    adversaire: Adversaire
+    bp: BP
+    bc: BC
+    domicile: A domicile
+    date: Date
+    typematch: Type de match
+    typematch.type: Type de match
+    centre:
+        centre: Centre
+    club: Club rencontré
+    club.list: Liste des clubs
+    club.nom: Club
+    equipe: Equipe de notre club
+    equipe.nom: Nom de l'équipe
+    user:  Membre
+    users: Membres
+    saison:
+        debut: Début saison
+        fin: Fin saison
+    
+    
+form:
+    register: Inscription
+    confirmed: Confirmation de votre inscription au site du club
+    checkemail: Vérification de l'inscription par email
+    erreur:
+        saisie              : Une erreur est survenue, veuillez vérifier que le formulaire est correctement complété!
+        access_denied       : Vous n'êtes pas autorisé à effectuer cette action!
+        objet_introuvable   : l'objet demandé n'existe pas!
+    success:
+        password_chgt   : le changement de mot de passe a bien été effectué!
+        modif_ok        : La modification a bien été effectuée!
+        creation_ok     : La création a bien été effectuée!
+    visiteur:   visiteur
+    bonjour:    Bonjour
+    login:      Se connecter
+    logout:     Se déconnecter
+    change_password:    Changer de mot de passe
+    plainPassword.first:  Mot de passe
+    plainPassword.second:  Vérification du mot de passe
+    label.new:    Nouveau mot de passe
+    label.club : Club de rattachement
+    label.newcheck: Vérification du nouveau mot de passe
+    placeholder.new : Saisir votre nouveau mot de passe        
+    placeholder:
+        username:   Saisir votre nom d'utilisateur
+        email:      Saisir votre email
+        nom:        Saisir votre nom
+        prenom:     Saisir votre prénom
+        tel:        Saisir votre numéro de téléphone
+        current_password:   Saisir votre mot de passe actuel
+        clubChoice:   Sélectionner un club
+    label:
+        id:        Id
+        designation:    Désignation
+        adresse:    Adresse
+        username:   Nom d'utilisateur
+        email:      Email
+        nom:        Nom
+        prenom:     Prénom
+        tel:        Téléphone
+        client:     Client
+        current_password:   Mot de passe actuel
+        enabled:    Actif
+        roles:      Niveau
+        ville: Ville
+        cp: Code postal
+        photo:  Photo
+    profil:
+        edit:   Editer votre profil
+        edition: Edition de votre profil
+        photo: Votre photo actuelle
+    title:
+        edit_utilisateur : Edition de l'utilisateur
+        list_utilisateur : Liste des utilisateurs
+        pass_utilisateur    : Changer le mot de passe de l'utilisateur 
+        show_utilisateur : Voir le détail d'un utilisateur

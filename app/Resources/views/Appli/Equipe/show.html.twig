@@ -1,0 +1,60 @@
+{% extends '::Appli/layout.html.twig' %}
+
+{% block title %} {{ parent() }}|equipe|{{'grid.show'|trans}} {% endblock %}
+
+{% block appli_content %}
+    {% include ':Grid:grid_style.html.twig' %}
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    {{ equipe.nom }} | {{ equipe.saison }} 
+                </div>
+                <div class="panel-body">
+                    <div class="alert alert-info">
+                        <table class="table table-condensed">
+                            <tr>
+                                <td>Nombre de matches joués / Total</td>
+                                <td><strong>{{statistiques.nbPlaiedMatches}}/{{statistiques.nbTotalMatches}}</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Nombre de points gagnés / A prendre</td>
+                                <td><strong>{{statistiques.nbWonPoints}} / {{statistiques.nbMaxPoints}}</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Taux de réussite</td>
+                                <td><strong>{{statistiques.reussiteTx}}%</strong></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p class="text-center"> 
+                        <img src="{{ asset(vich_uploader_asset(equipe, 'club_image'))| imagine_filter('large') }}" width="100%" class="img-rounded" alt="img_equipe" />
+                    </p>
+                    <p class="text-center">
+                        <h4> COACH </h4>
+                        {% for membre in equipe.users if 'ROLE_COACH' in membre.roles%}
+                            {{membre.prenom}} {{membre.nom}} |
+                        {% endfor %}
+                        <br/>
+                        <h4> JOUEURS </h4>
+                        {% for membre in equipe.users if 'ROLE_PLAYER' in membre.roles%}
+                            {{membre.prenom}} {{membre.nom}} |
+                        {% endfor %}
+                    </p>
+                </div>
+            </div>
+        </div>
+                    
+        <div class="col-sm-8">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    {{ 'panel.equipe.matchlist' | trans }}</a>
+                </div>
+                <div class="panel-body">
+                    {{ grid(grid, ':Grid:index_grid.html.twig') }}
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock appli_content %}
